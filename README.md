@@ -12,7 +12,7 @@ This image has been used to build Java projects and to push them to AWS ECS cont
 
 ## Additional packages ##
 
-* aws-cli
-* ecs-cli
+* [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
+* [ecs-cli](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html)
 
 See: https://hub.docker.com/r/softinstigate/maven-aws/
