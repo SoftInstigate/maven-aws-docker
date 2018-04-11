@@ -1,4 +1,4 @@
-FROM maven:3.5
+FROM maven:3-jdk-8
 
 LABEL maintainer="SoftInstigate <info@softinstigate.com>"
 
