@@ -6,9 +6,18 @@ A docker image for Maven with AWS and ECS CLI tools
 
 This image has been used to build Java projects and to push them to AWS ECS containers. It can be useful especially for CI and CD systems.
 
+## Example ##
+
+If you want to `mvn clean install` your Java project, CD where the pom.xml is located, then:
+
+```
+$ docker pull softinstigate/maven-aws
+$ docker run --rm softinstigate/maven-aws clean install
+```
+
 ## Base image ##
 
-[maven:3.5](https://hub.docker.com/r/library/maven/)
+[maven:3-jdk-8](https://hub.docker.com/r/library/maven/)
 
 ## Additional packages ##
 
