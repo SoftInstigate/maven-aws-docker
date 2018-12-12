@@ -7,10 +7,7 @@ RUN pip install awscli
 RUN curl -o /usr/local/bin/ecs-cli https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-linux-amd64-v1.5.0
 RUN chmod +x /usr/local/bin/ecs-cli
 
-RUN echo "================================================="
-RUN echo "maven version: $(mvn --version)"
-RUN echo "aws-cli version: $(aws --version)"
-RUN echo "ecs-cli version: $(ecs-cli --version)"
-RUN echo "================================================="
+COPY bin/startup.sh .
+RUN "./startup.sh"
 
 ENTRYPOINT [ "mvn" ]
