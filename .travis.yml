@@ -5,7 +5,7 @@ group: edge
 services:
 - docker
 script:
-- docker build -t softinstigate/maven-aws .
+- docker build --build-arg ECS_CLI_RELEASE="$ECS_CLI_RELEASE" -t softinstigate/maven-aws .
 after_success:
 - if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   docker login -u="$DOCKER_USER" -p="$DOCKER_PASS";
