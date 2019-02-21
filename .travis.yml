@@ -1,16 +1,9 @@
-sudo: required
-dist: trusty
-group: edge
-
 services:
-- docker
+  - docker
 script:
-- docker build --build-arg ECS_CLI_RELEASE="$ECS_CLI_RELEASE" -t softinstigate/maven-aws .
+  - ./bin/build.sh
 after_success:
-- if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
-  docker login -u="$DOCKER_USER" -p="$DOCKER_PASS";
-  docker push softinstigate/maven-aws:latest;
-  fi
+  - ./bin/push.sh
 env:
   global:
   - ECS_CLI_RELEASE=v1.5.0
