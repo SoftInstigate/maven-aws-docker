@@ -2,7 +2,7 @@ FROM maven:3-jdk-8
 
 LABEL maintainer="SoftInstigate <info@softinstigate.com>"
 
-ARG ECS_CLI_RELEASE=v1.5.0
+ARG ECS_CLI_RELEASE
 
 RUN apt-get update && apt-get -y install python-pip python-yaml python-dev
 RUN pip install awscli
