@@ -17,7 +17,7 @@ $ docker run --rm softinstigate/maven-aws clean install
 
 ## Base image ##
 
-[maven:3-jdk-8](https://hub.docker.com/r/library/maven/)
+[maven](https://hub.docker.com/r/library/maven/)
 
 ## Additional packages ##
 
