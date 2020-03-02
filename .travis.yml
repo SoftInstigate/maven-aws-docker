@@ -6,4 +6,4 @@ after_success:
   - ./bin/push.sh
 env:
   global:
-    - RELEASE=2.0.2
+    - RELEASE=2.0.3
