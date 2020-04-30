@@ -1,8 +1,8 @@
-# maven-aws-docker
+# Maven + AWS cli + ECS cli
 
 [![Build Status](https://travis-ci.org/SoftInstigate/maven-aws-docker.svg?branch=master)](https://travis-ci.org/SoftInstigate/maven-aws-docker)
 
-A docker image for Maven with [AWS CLI](https://aws.amazon.com/cli/) and [Amazon ECS command line interface](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli.html) tools.
+A Docker image for Apache Maven with [AWS CLI](https://aws.amazon.com/cli/) and [Amazon ECS command line interface](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli.html) tools.
 
 This image has been used to build Java projects and to push them to AWS ECS containers. It can be useful especially for CI and CD systems.
 
