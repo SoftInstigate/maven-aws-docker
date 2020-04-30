@@ -10,10 +10,12 @@ This image has been used to build Java projects and to push them to AWS ECS cont
 
 If you want to `mvn clean install` your Java project, CD where the pom.xml is located, then:
 
-```
+```bash
 $ docker pull softinstigate/maven-aws
-$ docker run --rm softinstigate/maven-aws clean install
+$ docker run -it --rm -v "$PWD":/usr/src/app  -v "$HOME"/.m2:/root/.m2 -w /usr/src/app softinstigate/maven-aws clean install
 ```
+
+> The `-v "$HOME"/.m2:/root/.m2` parameter mounts your local `~/.m2` Maven repository as a Docker volume.
 
 ## Base image ##
 
