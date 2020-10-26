@@ -36,6 +36,24 @@ docker run -it --rm --entrypoint "aws" softinstigate/maven-aws
 docker run -it --rm --entrypoint "ecs-cli" softinstigate/maven-aws
 ```
 
+### Check the installed versions
+
+To chekl the version of each installed tool, you can run the `startup.sh` script:
+
+```bash
+docker run -it --rm --entrypoint="./startup.sh" softinstigate/maven-aws
+
+=================================================
+Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
+Maven home: /usr/share/maven
+Java version: 11.0.9, vendor: Oracle Corporation, runtime: /usr/local/openjdk-11
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "4.19.76-linuxkit", arch: "amd64", family: "unix"
+aws-cli/2.0.59 Python/3.7.3 Linux/4.19.76-linuxkit exe/x86_64.debian.10
+ecs-cli version 1.20.0 (7547c45)
+=================================================
+```
+
 ## Base image ##
 
 [maven](https://hub.docker.com/r/library/maven/)
