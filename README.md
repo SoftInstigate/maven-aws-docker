@@ -60,9 +60,6 @@ ecs-cli version 1.20.0 (7547c45)
 
 ## Additional packages ##
 
- - python-pip
- - python-yaml
- - python-dev
  - groff
  - [aws-cli](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)
  - [ecs-cli](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS_CLI.html)
