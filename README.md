@@ -36,9 +36,9 @@ docker run -it --rm --entrypoint "aws" softinstigate/maven-aws
 docker run -it --rm --entrypoint "ecs-cli" softinstigate/maven-aws
 ```
 
-### Check the installed versions
+### Print the installed versions
 
-To chekl the version of each installed tool, you can run the `startup.sh` script:
+To print the version of each installed tool, you can run the `startup.sh` script:
 
 ```bash
 docker run -it --rm --entrypoint="./startup.sh" softinstigate/maven-aws
